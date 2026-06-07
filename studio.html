@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio | Nicolas Alvarez</title>
+    <meta name="description" content="Studio spaces and photo gallery for Nicolas Alvarez.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/animation.js" defer></script>
+    <script src="assets/js/lightbox.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Nicolas Alvarez home">Nicolas Alvarez</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="works.html">Works</a>
+        <a aria-current="page" href="studio.html">Studio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="hero-bg" style="background-image: url('assets/images/londonair2.JPG');"></div>
+        <div class="page-hero__inner">
+          <p class="eyebrow">Production environment</p>
+          <h1>Studio</h1>
+          <div class="hero-rule" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section studio-section">
+        <div class="section-heading">
+          <div>
+            <h2>Studio Rooms</h2>
+          </div>
+          <p>Purpose-built spaces for composition, production, recording, and mix review.</p>
+        </div>
+
+        <div class="studio-grid">
+          <figure class="studio-feature">
+            <img src="assets/images/studio1.jpg" alt="Production room" data-lightbox-image data-lightbox-gallery="studio">
+            <figcaption>Mixing Room</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/studio2.jpg" alt="Mixing room" data-lightbox-image data-lightbox-gallery="studio">
+            <figcaption>Production Room</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/studio3.jpg" alt="Open view" data-lightbox-image data-lightbox-gallery="studio">
+            <figcaption>Open View</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/studio4.jpg" alt="Recording booth" data-lightbox-image data-lightbox-gallery="studio">
+            <figcaption>Booth</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/studio5.jpg" alt="Nicolas Alvarez desk" data-lightbox-image data-lightbox-gallery="studio">
+            <figcaption>NA Desk</figcaption>
+          </figure>
+        </div>
+
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="section-kicker">Photo gallery</p>
+            <h2>Sessions</h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <img src="assets/images/gallery1.jpg" alt="Gallery image 1" data-lightbox-image data-lightbox-gallery="sessions" data-lightbox-caption="Budapest Philharmonic Orchestra">
+          <img src="assets/images/gallery2.jpg" alt="Gallery image 2" data-lightbox-image data-lightbox-gallery="sessions" data-lightbox-caption="At Ocean Way Studios Nashville">
+          <img src="assets/images/gallery3.jpg" alt="Gallery image 3" data-lightbox-image data-lightbox-gallery="sessions" data-lightbox-caption="Recording Drums at Ocean Way Studios Nashville">
+          <img src="assets/images/gallery4.JPG" alt="Gallery image 4" data-lightbox-image data-lightbox-gallery="sessions" data-lightbox-caption="At Air Studios London with Geoff Foster">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Nicolas Alvarez</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="works.html">Works</a>
+        <a href="studio.html">Studio</a>
+      </nav>
+    </footer>
+
+    <div class="lightbox" data-lightbox hidden>
+      <button class="lightbox__button lightbox__button--close" type="button" data-lightbox-close aria-label="Close image">&times;</button>
+      <button class="lightbox__button lightbox__button--prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+      <div class="lightbox__frame">
+        <img data-lightbox-current alt="">
+        <p class="lightbox__caption" data-lightbox-caption-current></p>
+      </div>
+      <button class="lightbox__button lightbox__button--next" type="button" data-lightbox-next aria-label="Next image">›</button>
+    </div>
+  </body>
+</html>
