@@ -384,10 +384,6 @@ a {
   padding: 1.1rem;
 }
 
-.cue-category--wide {
-  grid-column: span 2;
-}
-
 .cue-category h3,
 .service-card h3 {
   margin: 0 0 1rem;
@@ -901,7 +897,6 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .cue-category--wide,
   .studio-grid .studio-feature,
   .service-card--wide {
     grid-column: span 2;
@@ -1018,7 +1013,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .cue-category--wide,
   .studio-grid .studio-feature,
   .service-card--wide {
     grid-column: auto;
