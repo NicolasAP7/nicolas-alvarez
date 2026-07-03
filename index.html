@@ -3,21 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicolas Alvarez | Film Composer</title>
-    <meta name="description" content="Nicolas Alvarez, award-winning film composer, music producer, and orchestrator based in Tokyo.">
+    <title>Nicolas Alvarez | Film, Game & Media Composer</title>
+    <meta name="description" content="Nicolas Alvarez is a Tokyo-based film, game, and media composer offering original music, orchestration, score production, and recording direction.">
     <link rel="preload" as="image" href="assets/images/londonair.JPG">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/animation.js" defer></script>
-    <script src="assets/js/audio.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260703b">
+    <script src="assets/js/animation.js?v=20260703" defer></script>
+    <script src="assets/js/audio.js?v=20260703c" defer></script>
   </head>
   <body>
     <header class="site-header" data-header>
-      <h1 class="brand"><a href="index.html" aria-label="Nicolas Alvarez home">Nicolas Alvarez</a></h1>
+      <a class="brand" href="index.html" aria-label="Nicolas Alvarez home">Nicolas Alvarez</a>
       <nav class="nav" aria-label="Primary navigation">
         <a aria-current="page" href="index.html">Home</a>
+        <a href="#services">Services</a>
         <a href="profile.html">Profile</a>
         <a href="works.html">Works</a>
         <a href="studio.html">Studio</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -26,11 +28,15 @@
         <div class="hero-bg" style="background-image: url('assets/images/londonair.JPG');"></div>
         <div class="home-hero__content">
           <div class="home-hero__copy">
-            <p class="roles">
-              <span>Film Composer</span>
-              <span>Orchestrator</span>
-              <span>Producer</span>
-            </p>
+            <p class="eyebrow">Tokyo-based composer, orchestrator, producer, and recording director</p>
+            <h1>Film, Game &amp; Media Composer</h1>
+            <p class="hero-subheadline">Original music, orchestration, and score production for films, games, commercials, and themed entertainment.</p>
+            <p class="hero-intro">Nicolas Alvarez is a Tokyo-based composer, orchestrator, producer, and recording director with experience across video games, films, Japanese commercials, theme park projects, and international orchestra recordings.</p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button--primary" href="#music">Listen to Music</a>
+              <a class="button" href="works.html">View Credits</a>
+              <a class="button" href="#contact">Contact</a>
+            </div>
             <div class="hero-rule" aria-hidden="true"></div>
           </div>
           <figure class="portrait-frame">
@@ -39,7 +45,59 @@
         </div>
       </section>
 
-      <section class="section audio-showcase" aria-labelledby="music-showcase">
+      <section class="section available-section" id="available-for" aria-labelledby="available-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Client work</p>
+            <h2 id="available-heading">Available For</h2>
+          </div>
+          <p>Focused music and orchestral production support for teams working across screen, stage, location-based entertainment, and interactive media.</p>
+        </div>
+
+        <div class="available-grid">
+          <div class="available-item">Original Score for Film, Games &amp; TV</div>
+          <div class="available-item">Additional Music / Additional Composer Work</div>
+          <div class="available-item">Orchestration &amp; Arrangement</div>
+          <div class="available-item">Score Production</div>
+          <div class="available-item">International Orchestra Recording Direction</div>
+          <div class="available-item">Music for Commercials, Trailers &amp; Themed Entertainment</div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Services</p>
+            <h2 id="services-heading">Music, Orchestration &amp; Production</h2>
+          </div>
+          <p>Composition and score production services for producers, directors, game audio teams, agencies, and studios.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Original Score</h3>
+            <p>Custom music for films, games, documentaries, trailers, commercials, and themed entertainment.</p>
+          </article>
+          <article class="service-card">
+            <h3>Additional Music</h3>
+            <p>Support for lead composers, studios, and production teams needing extra cues, scene scoring, or additional thematic development.</p>
+          </article>
+          <article class="service-card">
+            <h3>Orchestration &amp; Arrangement</h3>
+            <p>Orchestration and arrangement for live orchestra, hybrid scores, cinematic productions, and media projects.</p>
+          </article>
+          <article class="service-card">
+            <h3>Score Production</h3>
+            <p>Music production support from demo to final delivery, including preparation, coordination, and production workflow.</p>
+          </article>
+          <article class="service-card service-card--wide">
+            <h3>Recording Direction</h3>
+            <p>Direction and supervision for orchestra and ensemble recording sessions, including international recording workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section audio-showcase" id="music" aria-labelledby="music-showcase">
         <div class="section-kicker">Selected cues</div>
         <div class="section-heading">
           <h2 id="music-showcase">Music Showcase</h2>
@@ -99,15 +157,35 @@
           </article>
         </div>
       </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-panel">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-heading">Project Inquiries</h2>
+          </div>
+          <div class="contact-copy">
+            <p>For composition, orchestration, additional music, score production, or recording direction inquiries, please get in touch.</p>
+            <div class="contact-actions">
+              <a class="button" href="mailto:nic@latinacorp.com">Email Nicolas</a>
+              <a class="button button--primary" href="https://soundcloud.com/nicolas-alvarez-723903243" target="_blank" rel="noreferrer">SoundCloud Profile</a>
+              <a class="button" href="works.html">View Credits</a>
+              <a class="button" href="#music">Listen to Music</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <p>&copy; 2026 Nicolas Alvarez</p>
       <nav aria-label="Footer navigation">
         <a href="index.html">Home</a>
+        <a href="#services">Services</a>
         <a href="profile.html">Profile</a>
         <a href="works.html">Works</a>
         <a href="studio.html">Studio</a>
+        <a href="#contact">Contact</a>
       </nav>
     </footer>
   </body>
