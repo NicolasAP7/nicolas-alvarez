@@ -102,7 +102,7 @@ const analyzeWaveform = (player, barCount) => {
   return cachedAnalysis;
 };
 
-const createWaveform = (barCount = 64) => {
+const createWaveform = (barCount = 160) => {
   const waveform = document.createElement("div");
   waveform.className = "playlist-player__waveform";
   waveform.setAttribute("aria-hidden", "true");
