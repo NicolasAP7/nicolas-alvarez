@@ -348,9 +348,25 @@ categories.forEach((category) => {
     player.addEventListener("ended", () => {
       player.currentTime = 0;
 
-      if (index === activeIndex) {
+      if (index !== activeIndex) {
+        return;
+      }
+
+      if (index === items.length - 1) {
         updateProgress();
         updatePlayingState();
+        return;
+      }
+
+      const nextIndex = index + 1;
+      const nextPlayer = items[nextIndex].player;
+
+      selectTrack(nextIndex, true);
+      pauseOtherPlayers(nextPlayer);
+      const playRequest = nextPlayer.play();
+
+      if (playRequest) {
+        playRequest.catch(updatePlayingState);
       }
     });
   });
